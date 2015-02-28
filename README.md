@@ -18,7 +18,7 @@ Quick Start
 Run devpi image
 
 ```bash
-docker run --name devpi -d -p 3141:3141 fl47l1n3/devpi
+docker run -d -p 3141:3141 fl47l1n3/devpi
 ```
 
 To test devpi, try install python package through devpi PyPi proxy
@@ -34,11 +34,11 @@ Configuration
 You should mount volume with packages data and devpi configs
 
 ```bash
-docker run --name devpi -d -p 3141:3141 -v /opt/devpi:/devpi fl47l1n3/devpi
+docker run -d -p 3141:3141 -v /opt/devpi:/devpi fl47l1n3/devpi
 ```
 
 You can add your command line options for devpi
 
 ```bash
-docker run --name devpi -d -p 3141:3141 fl47l1n3/devpi --role=replica
+docker run -d -p 3141:3141 fl47l1n3/devpi --role=replica
 ```
